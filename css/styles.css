@@ -12,11 +12,19 @@ nav ul {
 	float: right;
 }
 
+img {
+	max-width: 100%;
+}
 
+#featured img {
+	margin: 0 auto;
+	display: block;
+}
 
-
-
-
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
 
 
@@ -52,6 +60,27 @@ nav ul {
 
 }
 
+
+@media all and (min-width: 700px) {
+
+	#featured img {
+		float: left;
+		width: 60%;
+		margin-right: 10px;
+	}
+
+	#featured div {
+		width: 38%;
+		float: right;
+	}
+
+	#featured:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+}
 
 
 
